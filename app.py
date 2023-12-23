@@ -24,5 +24,5 @@ inputs = {"operation": option, "x": x, "y": y}
 
 if st.button('Calculate'):
     # Use the entered or default URL
-    res = requests.post(url=url, data=json.dumps(inputs
+    res = requests.post(url=url, data=json.dumps(inputs)
 
