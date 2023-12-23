@@ -6,7 +6,7 @@ st.title('Basic Calculator App')
 
 # Try to get the secret key from Streamlit secrets
 try:
-    url = st.secrets["api_url"]
+    url = st.secrets["secret"]
 except KeyError:
     # If the secret key is not found, provide a default value
     url = st.text_input('Enter API URL:', type='password', value="default_secret_key")
