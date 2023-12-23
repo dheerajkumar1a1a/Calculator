@@ -9,7 +9,7 @@ try:
     url = st.secrets["secret"]
 except KeyError:
     # If the secret key is not found, provide a default value
-    url = st.text_input('Enter API URL:', type='password', value="default_secret_key")
+    url = st.text_input('Enter API URL:', type='password')
 
 option = st.selectbox('Operation?', ('Addition', 'Subtraction', 'Multiplication', 'Division'))
 
